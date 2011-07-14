@@ -29,6 +29,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  eventmachine
   rake
   resque
   sinatra
