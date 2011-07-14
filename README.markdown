@@ -1,0 +1,1 @@
+We want to see whether we can get an EventMachine run loop to poll a Resque queue.
