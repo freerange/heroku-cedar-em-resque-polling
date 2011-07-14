@@ -4,6 +4,10 @@ require 'resque'
 require 'job'
 
 get '/' do
+  "Jobs currently queued: #{Resque.size(Job.queue)}"
+end
+
+get 'enqueue' do
   Resque.enqueue(Job)
-  "Job currently queued: #{Resque.size(Job.queue)}"
+  "Job queued successfully."
 end
